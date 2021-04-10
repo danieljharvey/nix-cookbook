@@ -29,7 +29,13 @@ If on MacOS, you can create Linux images with
 Install as follows:
 
 ```bash
+# install linux-kit
 nix-env -i /nix/store/jgq3savsyyrpsxvjlrz41nx09z7r0lch-linuxkit-builder
+
+# remove old config
+rm -rf ~/.cache/nix-linuxkit-builder
+
+# setup linux-kit
 nix-linuxkit-configure
 
 # add linuxkit ssh config to local ssh config

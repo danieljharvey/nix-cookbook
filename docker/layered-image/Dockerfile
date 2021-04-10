@@ -1,4 +1,4 @@
-FROM nodejs-base:latest
+FROM my-nix-image:latest
 
 # copy application files
 COPY app .
